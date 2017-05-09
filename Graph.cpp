@@ -31,20 +31,15 @@ void Graph::addEdge(Vertex i, Vertex j)
 	edges[i][j] = true;
 }
 
-// TO DO
 // return a vector of vertices adjacent to vertex n
 vector<Vertex> Graph::getAdjacentVertices(Vertex n) {
 }
 
-
-// TO DO
 // return a list of names that contain friends of friends of person
 // names should not be repeated
 vector<string> recommendFriends(Graph &graph, const string &person) {
 }
 
-
-// COMPLETED
 // read from a text file, the labels (names) to be associate with each vertex (int)
 void readNamesFromFile(Graph &graph, const string& filename) {
 	ifstream inputFile;
@@ -60,7 +55,6 @@ void readNamesFromFile(Graph &graph, const string& filename) {
 	}
 }
 
-// COMPLETED
 // read from a text file, the list of friends for each vertex (int)
 void readFriendsFromFile(Graph &graph, const string& filename) {
 	ifstream inputFile;
