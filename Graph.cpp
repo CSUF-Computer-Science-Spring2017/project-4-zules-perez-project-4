@@ -3,24 +3,32 @@
 #include <sstream>  // for std::istringstream
 #include "Graph.h"
 
-// TO DO
+
 // initialize an undirected graph that can store at most n vertices
-Graph::Graph(int n) {
+Graph::Graph(int n) 
+{
+	this->n = n;
+	edges.resize(n, vector<bool>(n,false));
+	labels.resize(n,string());
 }
-
-// TO DO
 // return the maximum number of vertices
-int Graph::size() {
+int Graph::size() 
+{
+	return labels.size();
 }
 
-// TO DO
 // give a string label to vertex
-void Graph::addLabel(Vertex i, string s) {
+void Graph::addLabel(Vertex i, string s) 
+{
+	labelsToInt.insert(make_pair(s,i));
+	intToLabels.insert(make_pair(i, s));
 }
 
-// TO DO
+
 // add an edge between vertices i and j
-void Graph::addEdge(Vertex i, Vertex j) {
+void Graph::addEdge(Vertex i, Vertex j)
+{
+	edges[i][j] = true;
 }
 
 // TO DO
