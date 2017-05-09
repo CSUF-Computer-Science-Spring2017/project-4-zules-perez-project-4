@@ -34,14 +34,16 @@ void Graph::addEdge(Vertex i, Vertex j)
 // return a vector of vertices adjacent to vertex n
 vector<Vertex> Graph::getAdjacentVertices(Vertex n)
 {
-	
+	vector<Vertex> V;
+	return V;
 }
 
 // return a list of names that contain friends of friends of person
 // names should not be repeated
 vector<string> recommendFriends(Graph &graph, const string &person) 
 {
-	
+	vector<string> v;
+	return v;
 }
 
 // read from a text file, the labels (names) to be associate with each vertex (int)
