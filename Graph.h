@@ -30,10 +30,8 @@ private:
 // names should not be repeated
 vector<string> recommendFriends(Graph &graph, const string& person);
 
-// COMPLETED
 // read from a text file, the labels (names) to be associate with each vertex (int)
 void readNamesFromFile(Graph &graph, const string& filename);
 
-// COMPLETED
 // read from a text file, the list of friends for each vertex (int)
 void readFriendsFromFile(Graph &graph, const string& filename);
