@@ -113,7 +113,10 @@ void readFriendsFromFile(Graph &graph, const string& filename)
 
 string Graph::getLabel(Vertex N)
 {
-	return labels[N];
+	if (intToLabels.find(N) != intToLabels.end())
+		return intToLabels.find(N)->second;
+	else
+		return 0;
 }
 
 Vertex Graph::getVertex(string label)
