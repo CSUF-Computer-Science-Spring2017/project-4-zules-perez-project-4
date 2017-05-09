@@ -20,8 +20,8 @@ int Graph::size()
 // give a string label to vertex
 void Graph::addLabel(Vertex i, string s) 
 {
-	labelsToInt.insert(make_pair(s,i));
-	intToLabels.insert(make_pair(i, s));
+	labelsToInt[s] = i;
+	intToLabels[i] = s;
 }
 
 
