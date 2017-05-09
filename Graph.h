@@ -6,23 +6,23 @@
 typedef int Vertex;
 using namespace std;
 
-class Graph {
+class Graph 
+{
 public:
-	Graph(int n); // TO DO
-	int size(); // TO DO
-	void addLabel(Vertex i, string s); // TO DO
-	void addEdge(Vertex i, Vertex j); // TO DO
+	Graph(int n);
+	int size();
+	void addLabel(Vertex i, string s); 
+	void addEdge(Vertex i, Vertex j);
 	vector<Vertex> getAdjacentVertices(Vertex); // TO DO
 
 	Vertex getVertex(string label); // OPTIONAL: may help your code
 	string getLabel(Vertex n); // OPTIONAL: may help your code
 
 private:
-	// TO DO
 	// member variables and functions to implement the public member functions
 	map<string,Vertex> labelsToInt;
 	map<Vertex,string> intToLabels;
-	vector<vector<bool>> adj;
+	vector<vector<bool>> edges;
 };
 
 // TO DO
