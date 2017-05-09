@@ -13,10 +13,10 @@ public:
 	int size();
 	void addLabel(Vertex i, string s); 
 	void addEdge(Vertex i, Vertex j);
-	vector<Vertex> getAdjacentVertices(Vertex N); // TO DO
+	vector<Vertex> getAdjacentVertices(Vertex N);
 
-	Vertex getVertex(string label); // OPTIONAL: may help your code
-	string getLabel(Vertex n); // OPTIONAL: may help your code
+	Vertex getVertex(string label);
+	string getLabel(Vertex n);
 
 private:
 	// member variables and functions to implement the public member functions
@@ -27,8 +27,6 @@ private:
 	map<string,Vertex> labelsToInt;
 	map<Vertex,string> intToLabels;
 };
-
-// TO DO
 // return a list of names that contain friends of friends of person
 // names should not be repeated
 vector<string> recommendFriends(Graph &graph, const string& person);
