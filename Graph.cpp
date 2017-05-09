@@ -3,7 +3,6 @@
 #include <sstream>  // for std::istringstream
 #include "Graph.h"
 
-
 // initialize an undirected graph that can store at most n vertices
 Graph::Graph(int n) 
 {
@@ -23,7 +22,6 @@ void Graph::addLabel(Vertex i, string s)
 	labelsToInt[s] = i;
 	intToLabels[i] = s;
 }
-
 
 // add an edge between vertices i and j
 void Graph::addEdge(Vertex i, Vertex j)
