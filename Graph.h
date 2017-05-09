@@ -13,7 +13,7 @@ public:
 	int size();
 	void addLabel(Vertex i, string s); 
 	void addEdge(Vertex i, Vertex j);
-	vector<Vertex> getAdjacentVertices(Vertex); // TO DO
+	vector<Vertex> getAdjacentVertices(Vertex N); // TO DO
 
 	Vertex getVertex(string label); // OPTIONAL: may help your code
 	string getLabel(Vertex n); // OPTIONAL: may help your code
