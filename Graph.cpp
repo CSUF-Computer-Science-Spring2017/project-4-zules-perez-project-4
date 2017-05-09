@@ -20,7 +20,6 @@ int Graph::size()
 void Graph::addLabel(Vertex i, string s) 
 {
 	labelsToInt[s] = i;
-	intToLabels[i] = s;
 }
 
 // add an edge between vertices i and j
@@ -114,10 +113,7 @@ void readFriendsFromFile(Graph &graph, const string& filename)
 
 string Graph::getLabel(Vertex N)
 {
-	if (intToLabels.find(N) != intToLabels.end())
-		return intToLabels.find(N)->second;
-	else
-		return 0;
+	return labels[N];
 }
 
 Vertex Graph::getVertex(string label)
