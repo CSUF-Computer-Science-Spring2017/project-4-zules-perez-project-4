@@ -20,6 +20,7 @@ int Graph::size()
 void Graph::addLabel(Vertex i, string s) 
 {
 	labelsToInt[s] = i;
+	intToLabels[i] = s;
 }
 
 // add an edge between vertices i and j
