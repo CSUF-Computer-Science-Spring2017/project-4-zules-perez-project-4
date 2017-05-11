@@ -8,12 +8,13 @@ Graph::Graph(int n)
 {
 	this->n = n;
 	edges.resize(n, vector<bool>(n,false));
-	labels.resize(n,string());
+	labelsToInt[string()] = n;
+	intToLabels[n] = string();
 }
 // return the maximum number of vertices
 int Graph::size() 
 {
-	return labels.size();
+	return n;
 }
 
 // give a string label to vertex
@@ -116,14 +117,10 @@ string Graph::getLabel(Vertex N)
 {
 	if (intToLabels.find(N) != intToLabels.end())
 		return intToLabels.find(N)->second;
-	else
-		return 0;
 }
 
 Vertex Graph::getVertex(string label)
 {
 	if (labelsToInt.find(label) != labelsToInt.end())
 		return labelsToInt.find(label)->second;
-	else
-		return 0;
 }
