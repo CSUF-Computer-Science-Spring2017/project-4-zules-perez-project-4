@@ -26,7 +26,7 @@ private:
 	vector< vector<Vertex>> adj;
 	map<string, Vertex> labelsToInt;
 	map<Vertex, string> intToLabels;
-	int n;
+	
 };
 
 // TO DO
