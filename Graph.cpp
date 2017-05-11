@@ -117,10 +117,14 @@ string Graph::getLabel(Vertex N)
 {
 	if (intToLabels.find(N) != intToLabels.end())
 		return intToLabels.find(N)->second;
+	else
+		return NULL;
 }
 
 Vertex Graph::getVertex(string label)
 {
 	if (labelsToInt.find(label) != labelsToInt.end())
 		return labelsToInt.find(label)->second;
+	else
+		return NULL;
 }
