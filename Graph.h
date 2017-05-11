@@ -21,11 +21,9 @@ public:
 private:
 	// member variables and functions to implement the public member functions
 	vector<vector<bool>> edges;
-	vector<string> labels;
-	int n; //number of vertices
-	
 	map<string,Vertex> labelsToInt;
 	map<Vertex,string> intToLabels;
+	int n; //number of vertices
 };
 // return a list of names that contain friends of friends of person
 // names should not be repeated
